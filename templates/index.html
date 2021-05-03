@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static %}
+
+    {% block body %}
+
+    <div class="wrapper">
+      <header class="header"><h1 class="titlehead">Accessible vSphere VMs</h1></header>
+      <p class="selectstyle selectstyle--style1">
+        <label for="favcity1" class="selectstyle__label">Select vSphereClient ID</label>
+        <span class="selectstyle__box">
+          <select id="favcity1" name="favcity1" class="selectstyle__box__select">
+            <option value="0">Select</option>
+            
+              <option value="3">TCS</option>
+              <option value="4">Infosys</option>
+              <option value="8">HCL Technologies</option>
+              <option value="11">Wipro</option>
+            
+      
+          </select>
+        </span>
+      </p>
+    
+      <p class="selectstyle selectstyle--style1">
+        <label for="favcity1" class="selectstyle__label">Select Virtual Machine</label>
+        <span class="selectstyle__box">
+          <select id="favcity1" name="favcity1" class="selectstyle__box__select">
+            <option value="0">Select</option>
+            
+              <option value="3">1f9e7b85cc9e</option>
+              <option value="4">671f1ff7f4ad</option>
+              <option value="8">d3dcf9585936</option>
+              <option value="11">432e1e9266</option>
+            
+      
+          </select>
+        </span>
+      </p>
+      <p class="selectstyle selectstyle--style1">
+        <label for="favcity1" class="selectstyle__label">Select Virtual Machine</label>
+        <span class="selectstyle__box">
+         <input type="text" placeholder="Enter VM_REF_ID">
+        </span>
+      </p>
+      <p class="selectstyle selectstyle--style1">
+        <a class="waves-effect waves-light btn-small"><i class="material-icons left"></i>Save Changes</a>
+     
+        </span>
+      </p>
+
+    
+      <footer class="footer" style="margin-top: 26%;"><a href="#">Created by Codiux (Private) Limited</a></footer>
+    </div> 
+
+
+    {% endblock %}

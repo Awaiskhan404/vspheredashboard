@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="static/img/favicon.png" type="image/png" >
+    <title>vSphere Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper nav-background">
+            <img src="{% static 'img/logo.png' %}" alt="vSphere" class="logo" width="60px">
+          <a href="{% url 'index' %}" class="brand-logo logo">vSphere Dashboard</a>
+          <ul class="right hide-on-med-and-down">
+           
+          </ul>
+        </div>
+      </nav>
+            
+
+
+    {% block body %}
+    {% endblock %}
+</body>
+</html>
